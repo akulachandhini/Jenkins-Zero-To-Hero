@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        jdk 'JDK11' // Use the JDK installation configured in Jenkins
+    }
+
     stages {
         stage('Build') {
             steps {
@@ -17,3 +21,4 @@ pipeline {
         }
     }
 }
+
