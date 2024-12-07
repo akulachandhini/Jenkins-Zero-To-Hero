@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: akulachandhini/ultimate-cicd:3
+        image: ${DOCKER_IMAGE}
         ports:
         - containerPort: 8080
